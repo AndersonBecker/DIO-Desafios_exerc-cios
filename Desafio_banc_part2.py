@@ -106,7 +106,7 @@ def saldo_tela(saldo):
     print("Saldo atual é de:  {saldo:.2f}")
 
 def nova_conta(agencia, numero_conta, usuarios):
-    cpf = input("Informe o CPF do usuário")
+    cpf = input("Informe o CPF do usuário: ")
     usuario = filtrar_usuario(cpf, usuarios)
 
     if usuario:
@@ -140,3 +140,5 @@ def listar_contas(contas):
         """
         print("=" * 100)
         print(linha)
+
+main()
